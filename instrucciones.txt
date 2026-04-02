@@ -1,0 +1,21 @@
+# 1. Clonar o crear el proyecto
+cd controlbar-backend
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Inicializar base de datos
+npm run init-db
+
+# 4. Iniciar servidor
+npm start
+
+# Modo desarrollo (con auto-reload)
+npm run dev
+
+
+👥 Usuarios por defecto
+Usuario	Contraseña	Rol
+mozo	mozo123	    Mozo
+cajero	cajero123	Cajero
+admin	admin123	Administrador
