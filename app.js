@@ -49,15 +49,15 @@ const pedidosRoutes = require('./routes/pedidos.routes');
 const cajaRoutes = require('./routes/caja.routes');
 const adminRoutes = require('./routes/admin.routes');
 
+app.get('/api/health', (req, res) => {
+    res.json({ success: true, message: 'ControlBar Backend funcionando' });
+});
+
 app.use('/api/auth', authRoutes);
 app.use('/api', productosRoutes);
 app.use('/api', pedidosRoutes);
 app.use('/api/caja', cajaRoutes);
 app.use('/api/admin', adminRoutes);
-
-app.get('/api/health', (req, res) => {
-    res.json({ success: true, message: 'ControlBar Backend funcionando' });
-});
 
 app.use(notFound);
 app.use(errorHandler);
